@@ -1,1 +1,16 @@
-Using this folder to store notes.
+11/1/19
+Professor Appointment:
+- Next week
+
+TODO for next week:
+- Research questions/notes:
+ - Given a random distribution of passengers in a bus/air-train system, we should determine how many buses/trams are needed.
+ - How many buses/trams needed to avoid overcrowding on queues.
+ - How can we model passengers (stop they get on, and off)
+ - Contained environment, buses/trams travel in sequential.
+ - Looking at real world data for how often passengers queue?
+ - Look into JFK open data?
+
+Presentation To Professor:
+
+TODO: Finalize the questions and what we want to present to her
