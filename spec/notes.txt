@@ -11,6 +11,36 @@ TODO for next week:
  - Looking at real world data for how often passengers queue?
  - Look into JFK open data?
 
-Presentation To Professor:
+11/7/19
+Notes from Jean's meeting with professor:
 
-TODO: Finalize the questions and what we want to present to her
+We may need to change what we want to measure, because 'how many buses are needed to effectively service all of the passengers' are measuring and analyzing, hence an optimization problem, which we don't have much knowledge of. Simulation would be more of modeling a behavior of certain phenomenon using a few choice parameters, with number of trials and difference scenario.
+But still she liked our idea of bus routing.
+- TODO: Come up with another question that answers what our model does
+  - How is wait time affected by the frequency of buses
+  - How is TRAVEL time ...
+  - Model different bus sizes, different queue, traffic
+There are no real difference between models for a bus route and an air train (so no point going through 'simpler' model)
+- Ok
+We should start with DES (with possibility of continuous model later)
+- Ok
+# of bus = frequency
+- Ok
+Keep the arrival rate to be constant as it adds complexity if it is random.
+- A distribution model (standard distribution, poisson, etc...)
+Consider using markov chain with stationary probability (for arrival rate?)
+- The arrival of passangers and their travel time should not impact across state.
+Decide on one parameter we want to control/measure (frequency?)
+- Waiting time
+
+Simulation should be able to adapt to the input parameters. However, using real life data might not be good idea as such data contains irregularity and defects that would eat up our time just dealing with it. In order to verify the validity of our model, it would be just analyze the model itself.
+QUESTION: how much weight are we giving to parameters used? (wait time, overcrowding)
+QUESTION: do you want to control 'headway'?
+- What's a 'headway'?
+QUESTION: what deliverables would we be required of? (ANSWER: 1. description/definition of model for our simulation, 2. explanation on why we choose such that model, 3. control measures, 4. performance measures; please see the class website for the project presentation example and template)
+
+TODO: Look up these KEYWORDS: headway, ghost simulation, origin destination matrix
+
+DELIVERABLES:
+- Explain in detail what models we used
+- What were our outcomes.
