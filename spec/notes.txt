@@ -44,3 +44,21 @@ TODO: Look up these KEYWORDS: headway, ghost simulation, origin destination matr
 DELIVERABLES:
 - Explain in detail what models we used
 - What were our outcomes.
+=======
+Presentation/Meeting Notes with Professor:
+
+- Topic: Simulating an closed bus route/terminal with multiple stops.
+- Question: Given a distribution of passengers arriving, how many buses are needed to effectiently service all of the passangers?
+ - Effectiently: To not have a wait time of more than X mins for any passangers.
+ - Study of how the model would change if we were to change:
+  - The frequency of passangers arriving.
+  - Number of stops/multiple routes
+  - Adding other factors such as express/local bus services, etc...
+- Modeling:
+ - How can we effectively model this bus route?
+ - How to model the different events.
+ - Choosing the right model (DES, tick based, etc...) for different parts of the simulation.
+- Measuring our results/presentation of findings:
+ - What determines the effectiveness of our model?
+ - And how to measure the effectiveness of our model?
+ - How/what can we present to display the effectiveness of our model?
