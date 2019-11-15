@@ -62,3 +62,23 @@ Presentation/Meeting Notes with Professor:
  - What determines the effectiveness of our model?
  - And how to measure the effectiveness of our model?
  - How/what can we present to display the effectiveness of our model?
+
+======================
+PROJECT GOALS/PLANNING
+======================
+Questions to consider:
+[ ] Average travel distance for passenger (technically we can measure it before they even get on the bus)
+[ ] Average waiting time in the station for each customer (impacted by traffic?)
+[ ] Different # of passengers arriving in groups (measure different distribution for arrival times and # of passenger arrivals)
+
+Points to note:
+- DES vs Retrospective model vs Petri Net vs Tick Based (pick 2)
+- Start with MVP (simple model)
+- How to model bus route? How to model traffic?
+
+Goals *By next week* 11/22
+- Meet up again on Tuesday to plan.
+- Be familiar with project and report requirements. (http://www.cs.hunter.cuny.edu/~felisav/StochasticProcesses/Assessment.html)
+- Come up with bus route visual. (Straight route, 3 station, keep it simple for now)
+-- Write some code to simulate this?
+- Read up on chapter/papers on DES
