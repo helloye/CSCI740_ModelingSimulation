@@ -82,3 +82,29 @@ Goals *By next week* 11/22
 - Come up with bus route visual. (Straight route, 3 station, keep it simple for now)
 -- Write some code to simulate this?
 - Read up on chapter/papers on DES
+
+Goals *By next week* 11/29
+- Read up PDF given to us by professor
+
+
+
+
+==== REQUIREMENTS FOR BASE MVP MODEL ====
+
+** Think in terms of DES model**
+** Code so that it is flexiable to expand upon**
+
+- Code 5 bus stops
+- Uniform bus distance between stops (should be flexiable)
+- Each bus stop should have their own distribution (can keep it same for all stops as MVP)
+- Bus stopping time at each station (relative to current station's queue size)
+- Frequency of buses (at least 2 per simuation for MVP)
+- Define the events
+ - Event of people arriving
+ - Event of bus at the station (arrival, passenger pickup/dropoff, departure)
+
+ TODO by 11/26:
+ All: Read PDF!!!
+ Jean - Check MTA API for geographical info
+ Anuj/Ye - Try and implemenet the base model
+
