@@ -32,9 +32,19 @@ def main():
         pas_arrival_time = int(random_passengers_arrival[i])
         pas_station_assignment = 's' + str(int(uniform_random_station[i]))
 
-        print("Queuing passenger to: " + pas_station_assignment + " arrived at:" + str(pas_arrival_time))
-        # TODO: Queue passenger to station
-        # TODO: Determine uniform(?) destination of passenger
+        print("Queuing passenger to: " + pas_station_assignment + " | arrived at: " + str(pas_arrival_time))
+        # TODO: Determine uniform(?) destination of passenger (null destination for now/end of line)
+
+        if pas_station_assignment is 's1':
+            s1.queue_passenger(Passenger('s1', 'nullDestination', pas_arrival_time))
+        elif pas_station_assignment is 's2':
+            s1.queue_passenger(Passenger('s2', 'nullDestination', pas_arrival_time))
+        elif pas_station_assignment is 's3':
+            s1.queue_passenger(Passenger('s3', 'nullDestination', pas_arrival_time))
+        elif pas_station_assignment is 's4':
+            s1.queue_passenger(Passenger('s4', 'nullDestination', pas_arrival_time))
+        elif pas_station_assignment is 's5':
+            s1.queue_passenger(Passenger('s5', 'nullDestination', pas_arrival_time))
 
 
 
