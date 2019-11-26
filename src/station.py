@@ -3,7 +3,7 @@ import queue
 
 class Station:
     def __init__(self, l):
-        # Unique id of the station in the system
+        # Unique id/(l)ocation of the station in the system
         self.station_id = l
 
         # Queue of passengers in the station. Infinite queue.
