@@ -14,3 +14,6 @@ class Passenger:
 
     def time_in_system(self):
         return self.departure_time - self.arrival_time
+
+    def passenger_info(self):
+        return "[PInfo]:: Station[" + self.source + "] ArrivalTime[" + str(self.arrival_time) + "]"

@@ -12,6 +12,9 @@ MAX_PASSENGERS_IN_SIMULATION = 100
 # Number of stations in simulation
 MAX_STATIONS = 5
 
+# Max bus size
+MAX_BUS_SIZE = 50
+
 def main():
 
     '''
@@ -20,7 +23,7 @@ def main():
     - Generates random passengers (standard distribution)
     - Assign passengers to station (uniform distribution)
     '''
-    
+
     # Static stations that will not change throughout the simulation
     s1 = Station('s1')
     s2 = Station('s2')
@@ -31,6 +34,7 @@ def main():
     mean, sd, low, high = 360, 360, 0, 720
     passenger_randomizer = truncnorm((low-mean)/sd, (high-mean)/sd, loc=mean, scale=sd)
     random_passengers_arrival = passenger_randomizer.rvs(MAX_PASSENGERS_IN_SIMULATION)
+    random_passengers_arrival.sort()
     # print(random_passengers_arrival)
 
     # TODO: Determine if uniform arrival is ok?
@@ -42,20 +46,24 @@ def main():
         pas_arrival_time = int(random_passengers_arrival[i])
         pas_station_assignment = 's' + str(int(uniform_random_station[i]))
 
-        print("Queuing passenger to: " + pas_station_assignment + " | arrived at: " + str(pas_arrival_time))
+        # print("Queuing passenger to: " + pas_station_assignment + " | arrived at: " + str(pas_arrival_time))
         # TODO: Determine uniform(?) destination of passenger (null destination for now/end of line)
 
-        if pas_station_assignment is 's1':
+        if pas_station_assignment == 's1':
             s1.queue_passenger(Passenger('s1', 'nullDestination', pas_arrival_time))
-        elif pas_station_assignment is 's2':
+        elif pas_station_assignment == 's2':
             s2.queue_passenger(Passenger('s2', 'nullDestination', pas_arrival_time))
-        elif pas_station_assignment is 's3':
+        elif pas_station_assignment == 's3':
             s3.queue_passenger(Passenger('s3', 'nullDestination', pas_arrival_time))
-        elif pas_station_assignment is 's4':
+        elif pas_station_assignment == 's4':
             s4.queue_passenger(Passenger('s4', 'nullDestination', pas_arrival_time))
-        elif pas_station_assignment is 's5':
+        elif pas_station_assignment == 's5':
             s5.queue_passenger(Passenger('s5', 'nullDestination', pas_arrival_time))
 
-
+    # s1.print_queue()
+    # s2.print_queue()
+    # s3.print_queue()
+    # s4.print_queue()
+    # s5.print_queue()
 
 main()
