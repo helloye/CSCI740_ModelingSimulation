@@ -9,11 +9,23 @@ class Passenger:
         # Time this passenger arrived at the station and into the system.
         self.arrival_time = a
 
-        # Time this passenger arrived at the destination and left the system.
-        self.departure_time = -1
+        # Time this passenger waited in queue in station
+        self.wait_time = -1
 
-    def time_in_system(self):
-        return self.departure_time - self.arrival_time
+    def has_waited_more_than_20_min(self, current_time):
+        return (current_time - self.arrival_time) > 20
+
+    def has_arrived(self, current_time):
+        return self.arrival_time <= current_time
+
+    def has_not_arrived(self, current_time):
+        return self.arrival_time > current_time
+
+    def set_wait_time(self, current_time):
+        self.wait_time = current_time - self.arrival_time
+
+    def time_in_system(self, current_time):
+        return current_time - self.arrival_time
 
     def passenger_info(self):
         return "[PInfo]:: Station[" + self.source + "] ArrivalTime[" + str(self.arrival_time) + "]"
