@@ -15,6 +15,9 @@ class Bus:
         # List of passengers currently on the bus
         self.passengers = []
 
+    def get_passengers(self):
+        return self.passengers
+
     def passenger_count(self):
         return len(self.passengers)
 

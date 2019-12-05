@@ -24,6 +24,9 @@ class Passenger:
     def set_wait_time(self, current_time):
         self.wait_time = current_time - self.arrival_time
 
+    def get_wait_time(self):
+        return self.wait_time
+
     def time_in_system(self, current_time):
         return current_time - self.arrival_time
 
