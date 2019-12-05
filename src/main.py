@@ -183,15 +183,15 @@ def main(bus_interval_override):
     # print("======= ANALYTICS =======\n\n")
 
     # CSV Format print
-    print('{},{},{},{}'
+    print('{},{},{},{},{},{},{},{},{}'
           .format(BUS_INTERVAL,
                   len(buses_out_of_system),total_passenger_serviced_count,
-                  total_passenger_left_count),
+                  total_passenger_left_count,
           revenue_gained,
           revenue_loss,
           total_serviced_passenger_wait_time,
           avg_wait_time,
-          execution_time)
+          execution_time))
 
 
 
